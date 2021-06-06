@@ -5,4 +5,4 @@ The script generates a static HTML web page based upon the svg output of `system
 ## Demo
 ![alt text](https://raw.githubusercontent.com/lakabd/systemd_dependency_viewer/main/demo.gif)
 
-dot to svg convertion is done statically using a javascript application [viz.js](https://lakabd.github.io/viz.js) (a JS compiled [graphviz(C)](https://graphviz.org/download/), using [emscripten](https://github.com/kripken/emscripten)).
+dot to svg conversion is done statically using a javascript application [viz.js](https://lakabd.github.io/viz.js) (a JS compiled [graphviz(C)](https://graphviz.org/download/), using [emscripten](https://github.com/kripken/emscripten)).
