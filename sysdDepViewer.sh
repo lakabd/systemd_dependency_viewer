@@ -47,8 +47,12 @@ done <<< $(systemd-analyze plot)
 tee -a $LINK > /dev/null <<EOL
 <script>
 	function sysdDep(element){
-		console.log(element.getElementsByClassName('left')[0].innerHTML.split(" ")[0]);
-		service_name=element.getElementsByClassName('left')[0].innerHTML.split(" ")[0];
+		if (element.getElementsByClassName('left')[0].innerHTML.split(" ")[0] != null){
+			service_name=element.getElementsByClassName('left')[0].innerHTML.split(" ")[0];
+		}
+		else{
+			service_name=element.getElementsByClassName('right')[0].innerHTML.split(" ")[0];
+		}
 		if (document.getElementsByClassName(service_name)[0] != null){
 			dotsrc=document.getElementsByClassName(service_name)[0].textContent;
 		}
